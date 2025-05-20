@@ -20,17 +20,7 @@
             font-size:xx-large;
         }
     </style>
-    <script language = "javascript">
-        arrColor = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
-        function mouseOut() {
-          for (i = 0; i < 13; i++)
-            setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[15-i]+'0'+arrColor[15-i]+'FFF";', i * 50);
-        }
-        function mouseOver() {
-          for (i = 0; i < 15; i++)
-            setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[i]+'0'+arrColor[i]+'F31";', i * 50);
-        }
-        </script>
+    
 </head>
 <body class="bg_color"> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,10 +32,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index copy.html">Help</a>
+                <a class="nav-link active" aria-current="page" href="index copy.html">Help</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -59,12 +49,20 @@
 <div>
     <h1 align="center">Заголовок</h1>
 </div>
-<div align="center">
-    <img src="https://www.laxcali.com/uploads/newsarticle/5ad101a725bd458f95200e46d2fe3279/110197.jpeg" width="50%" height="50%">
+<div>
+    <p style="color:#0000FF">Параграф 1</p>
+    <ol style="color:#00FF00">
+        <li class="small"> Первый пункт</li>
+        <li class="normal"> Второй пункт</li>
+        <li class="large"> Третий пункт</li>
+    </ol>
+    <p>Параграф 2</p>
+    <ul>
+        <li>Первый пункт</li>
+        <li>Второй пункт</li>
+        <li>Третий пункт</li>
+    </ul>
 </div>
-<br><form align="center" name = "blinkbutton">
-    <input type="button" name="button" value=" Наведи мышку " onMouseOver='mouseOver()' onMouseOut='mouseOut()' style="background-color: #1400FF">
-  </form></br>
 <div align="center">
     <i>Подвал</i>
 </div>
